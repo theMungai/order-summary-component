@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Red Hat Display";
+    background: url(/images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-container{
+    width: 25%;
+    height: auto;
+    background-color: var(--pale-blue);
+    border-radius: 15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    padding: 0;
+}
+
+.image img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.order-summary{
+    margin: 30px 60px;
+    text-align: center;
+}
+
+.order-summary h2 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+
+.order-summary p{
+    color: var(--desaturated-blue);
+    line-height: 1.6rem;
+}
+
+.annual-plan-container{
+    margin: 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.annual-plan-container a {
+    font-weight: 500;
+}
+
+.annual-plan-container a:hover{
+    color: hsla(245, 67%, 62%, 0.932);
+    text-decoration: none;
+}
+
+.annual-plan-details  {
+    display: flex;
+    align-items: center;
+}
+
+.music-icon {
+    padding-right: 15px;
+}
+
+.pricing h4{
+    color: var(--dark-blue);
+}
+
+.pricing p{
+    color: var(--desaturated-blue);
+}
+
+.proceed-to-payment{
+    margin: 40px;
+}
+
+.proceed-to-payment input{
+    width: 100%;
+    background-color: var(--bright-blue);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0px;
+    color: var(--very-pale-blue);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.proceed-to-payment input:hover{
+    background-color: hsla(245, 67%, 62%, 0.932);
+}
+
+.proceed-to-payment h4{
+    color: var(--desaturated-blue);
+    padding: 30px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.proceed-to-payment h4:hover{
+    color: var(--dark-blue);
+}
+
+.attribution { 
+    font-size: 13px;
+    text-align: center; 
+    position: relative;
+    top: 20%;
+}
+    
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+/* =================Media Queries ======================== */
+/* =================Mobile Devices========================= */
+
+@media (max-width:480px){
+    body{
+        background: url(/images/pattern-background-mobile.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .main-container{
+        width: 90%;
+    }
+   
+    .order-summary{
+        margin: 30px 40px;
+    }
+    
+    .annual-plan-container{
+        margin: 0px 30px;
+    }
+ 
+    .music-icon {
+        padding-right: 10px;
+    }
+    
+    .proceed-to-payment{
+        margin: 30px;
+    }
+    .attribution { 
+        top: 20%;
+    }
+}
+
+
+/* ================= Small Tablets ========================= */
+
+@media (min-width:481px) and (max-width:767px){
+    body{
+        background: url(/images/pattern-background-mobile.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .main-container{
+        width: 80%;
+    }
+   
+    .order-summary{
+        margin: 30px 40px;
+    }
+    
+    .annual-plan-container{
+        margin: 0px 30px;
+    }
+ 
+    .music-icon {
+        padding-right: 10px;
+    }
+    
+    .proceed-to-payment{
+        margin: 30px;
+    }
+    .attribution { 
+        top: 15%;
+    }
+}
+
+/* =================Tablets ========================= */
+
+@media (min-width:768px) and (max-width:991px){
+    body{
+        background: url(/images/pattern-background-mobile.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .main-container{
+        width: 60%;
+    }
+   
+    .order-summary{
+        margin: 30px 40px;
+    }
+    
+    .annual-plan-container{
+        margin: 0px 30px;
+    }
+ 
+    .music-icon {
+        padding-right: 10px;
+    }
+    
+    .proceed-to-payment{
+        margin: 30px;
+    }
+    .attribution { 
+        top: 15%;
+    }
+}
+
+/* ================= Small Laptops ========================= */
+
+@media (min-width:992px) and (max-width:1199px){
+    body{
+        background: url(/images/pattern-background-mobile.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .main-container{
+        width: 50%;
+    }
+   
+    .order-summary{
+        margin: 30px 40px;
+    }
+    
+    .annual-plan-container{
+        margin: 0px 30px;
+    }
+ 
+    .music-icon {
+        padding-right: 10px;
+    }
+    
+    .proceed-to-payment{
+        margin: 30px;
+    }
+    .attribution { 
+        top: 15%;
+    }
+}
+
+/* =================Laptops ========================= */
+
+@media (min-width:1200px) and (max-width:1399px){
+    body{
+        background: url(/images/pattern-background-desktop.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .main-container{
+        width: 50%;
+    }
+   
+    .order-summary{
+        margin: 30px 40px;
+    }
+    
+    .annual-plan-container{
+        margin: 0px 30px;
+    }
+ 
+    .music-icon {
+        padding-right: 10px;
+    }
+    
+    .proceed-to-payment{
+        margin: 30px;
+    }
+    .attribution { 
+        top: 15%;
+    }
+}
