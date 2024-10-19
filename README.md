@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [theMungai - Github](https://github.com/theMungai/order-summary-component)
-- Live Site URL: [vercel.app/](https://your-live-site-url.com)
+- Live Site URL: [vercel.app/](https://order-summary-component-five-tan.vercel.app/)
 
 ## My process
 
